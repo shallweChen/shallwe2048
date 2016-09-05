@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<title>2048</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="2048.css">
+	</head>
+	<body>
+		<!--得分，和最高分-->
+		<p>
+			Top: <span id="top"></span><br>
+			Score: <span id="score"></span>
+		</p>
+		<!--创建一个id为gridPanel的div-->
+		<div id="gridPanel">
+		<!--创建16个背景div，class属性为grid,id与数组编号一致-->
+			
+			<!--
+			<div id="g00" class="grid"></div>
+			<div id="g01" class="grid"></div>
+			<div id="g02" class="grid"></div>
+			<div id="g03" class="grid"></div>
+
+			<div id="g10" class="grid"></div>
+			<div id="g11" class="grid"></div>
+			<div id="g12" class="grid"></div>
+			<div id="g13" class="grid"></div>
+
+			<div id="g20" class="grid"></div>
+			<div id="g21" class="grid"></div>
+			<div id="g22" class="grid"></div>
+			<div id="g23" class="grid"></div>
+
+			<div id="g30" class="grid"></div>
+			<div id="g31" class="grid"></div>
+			<div id="g32" class="grid"></div>
+			<div id="g33" class="grid"></div>
+			-->
+			
+		<!--创建16个背景div，class属性为cell,id与数组编号一致-->
+
+			<!--
+			<div id="c00" class="cell"></div>
+			<div id="c01" class="cell"></div>
+			<div id="c02" class="cell"></div>
+			<div id="c03" class="cell"></div>
+
+			<div id="c10" class="cell"></div>
+			<div id="c11" class="cell"></div>
+			<div id="c12" class="cell"></div>
+			<div id="c13" class="cell"></div>
+
+			<div id="c20" class="cell"></div>
+			<div id="c21" class="cell"></div>
+			<div id="c22" class="cell"></div>
+			<div id="c23" class="cell"></div>
+
+			<div id="c30" class="cell"></div>
+			<div id="c31" class="cell"></div>
+			<div id="c32" class="cell"></div>
+			<div id="c33" class="cell"></div>
+			-->
+
+		</div>
+
+		<div id="gameOver">
+			<div><!--全屏半透明背景--></div>
+			<!--前景对话框-->
+			<p>
+				GAME OVER !<br>
+				Score: <span id="fscore"></span><br>
+				<a class="btn" onclick="game.start()">Try again</a>
+			</p>
+		</div>
+		<script src="2048.js">//js放在页面最后，减少用户等待时间</script>
+	</body>
+</html>
